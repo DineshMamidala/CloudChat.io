@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinesh Mamidala</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+	<style>
+body {
+  background-image: url('m.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.message__area{
+	background-image: url('c.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+    padding: 20px; 
+    border-radius: 4px; 
+    margin-bottom: 40px;
+    max-width: 300px;
+    position: relative;
+</style>
+    <section class="chat__section">
+        <div class="brand">
+            <img height="40" src="/wassup.png" alt="">
+            <h1>Mamidala's Messenger</h1>
+        </div>
+        <div style="background-image: url('c.jpg');" class="message__area"></div>
+        <div class="FileUpload">
+        	
+            <textarea id="textarea" cols="30" rows="1" placeholder="Write a message..." type="file" id="file"></textarea>
+        </div>
+       
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+
+</html>
